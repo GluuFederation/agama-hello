@@ -39,7 +39,8 @@
                 },
                 "uidPrefix": "hello-"
             },
-            "hello.agama.inbound.hello": {}
+            "hello.agama.inbound.hello": {},
+            "hello.agama.inbound.hello_user": {}
         },
         "name": "agama-hello"
     }
