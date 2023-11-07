@@ -15,11 +15,8 @@
             "social-logins",
             "authentication"
         ],
-        "noDirectLaunch": [
-            "hello.agama.inbound.hello_user"
-        ],
+        "noDirectLaunch": [],
         "configs": {
-            "org.gluu.agama.hello": {},
             "org.gluu.agama.oidc": {},
             "org.gluu.agama.user": {},
             "hello.agama.inbound.main": {
