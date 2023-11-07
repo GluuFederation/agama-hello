@@ -20,7 +20,23 @@
             "org.gluu.agama.hello": {},
             "org.gluu.agama.oidc": {},
             "org.gluu.agama.user": {},
-            "hello.agama.inbound.main": {}
+            "hello.agama.inbound.main": {
+                "hello": {
+                    "authzEndpoint": "https://wallet.hello.coop/authorize",
+                    "tokenEndpoint": "https://wallet.hello.coop/oauth/token",
+                    "userInfoEndpoint": "https://wallet.hello.coop/oauth/userinfo",
+                    "clientId": "CLIENT_INDENTIFIER",
+                    "clientSecret": "CLIENT_SECRET",
+                    "scopes": [
+                        "openid"
+                    ],
+                    "clientCredsInRequestBody": true,
+                    "custParamsAuthReq": {},
+                    "custParamsTokenReq": {},
+                    "redirectUri": " "
+                },
+                "uidPrefix": "hello-"
+            }
         },
         "name": "agama-hello"
     }
