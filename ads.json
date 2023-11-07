@@ -17,7 +17,8 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "org.gluu.agama.hello": {}
+            "org.gluu.agama.hello": {},
+            "org.gluu.agama.oidc": {}
         },
         "name": "agama-hello"
     }
