@@ -19,7 +19,8 @@
         "configs": {
             "org.gluu.agama.hello": {},
             "org.gluu.agama.oidc": {},
-            "org.gluu.agama.user": {}
+            "org.gluu.agama.user": {},
+            "hello.agama.inbound.main": {}
         },
         "name": "agama-hello"
     }
