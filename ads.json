@@ -16,7 +16,7 @@
             "authentication"
         ],
         "noDirectLaunch": [
-            "hello.agama.inbound.hello"
+            "hello.agama.inbound.hello_user"
         ],
         "configs": {
             "org.gluu.agama.hello": {},
