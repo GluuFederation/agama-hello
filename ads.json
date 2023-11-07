@@ -16,6 +16,9 @@
             "authentication"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {
+            "org.gluu.agama.hello": {}
+        },
+        "name": "agama-hello"
     }
 }
