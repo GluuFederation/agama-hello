@@ -36,7 +36,8 @@
                     "redirectUri": " "
                 },
                 "uidPrefix": "hello-"
-            }
+            },
+            "hello.agama.inbound.hello": {}
         },
         "name": "agama-hello"
     }
