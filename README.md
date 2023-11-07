@@ -34,10 +34,10 @@ Download the latest [agama-hello.gama](https://github.com/GluuFederation/agama-h
 ## Configuration
 
 After deploying the `agama-hello` project into the Janssen server you can extract the config by following these steps:
-1. Move to the top of the agama-project using `jans-tui` then press `c` It will pop with below option:
-   ![Screenshot 2023-10-31 at 1 10 53 PM](https://github.com/imShakil/hello-agama/assets/20867846/205cfaf8-7923-428c-bffe-c83212cec0c1)
-2. You can choose `export sample config` to view the config file supported by this project
-3. Then, modify it and `import config`.
+1. Move to the top of the agama-project using `jans-tui` then press `c` It will pop with the below option:
+   ![Screenshot 2023-10-31 at 1 10 53 PM](https://github.com/GluuFederation/agama-hello/assets/20867846/932a6af7-f936-4caa-9e63-e5c300898919)
+3. You can choose `export sample config` to view the config file supported by this project
+4. Then, modify it and `import config`.
 
 Here is what the config file should look like:
 
