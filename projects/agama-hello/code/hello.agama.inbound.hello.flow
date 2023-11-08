@@ -2,8 +2,6 @@
 Flow hello.agama.inbound.hello
      Basepath ""
      Inputs oauthParams
-// log
-Log "@info hello-agama: hello.coop social logins flow processing..."
 // obtain redirect uri from http url
 redirect_uri = Call io.jans.util.URLParsing#getRedirectUri 
 When oauthParams.redirectUri is null
