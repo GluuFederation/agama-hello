@@ -1,3 +1,13 @@
+<p align="center">
+  <img width="600" height="400" src="https://github.com/GluuFederation/agama-hello/assets/20867846/5158d850-dc31-4e09-a952-f8d89294dd89">
+</p>
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Apache License][license-shield]][license-url]
+
 # Agama-Hellō
 
 **Agama-Hello** is an Inbound OpenID based Agama project for social logins. This project is a successful collaboration between [Janssen Server](https://docs.jans.io) and [hello.coop](https://hello.coop) SaaS service on the Agama journey ahead. Hellō is a SaaS service which suppports a big number of social platform to login using Single-sign-on. So, With the deoployment of this agama project into the Janssen server we can enable social logins for a big number of social platform for Jans users.
@@ -107,3 +117,23 @@ Either you can try [jans-tarp](https://github.com/JanssenProject/jans/tree/main/
 </tr>
 </table>
 
+
+# License
+
+This project is licensed under the Apache License - see the [LICENSE](LICENSE) file for details.
+
+# Acknowledgments
+
+This project is truly based on [agama-openid](https://github.com/GluuFederation/agama-openid). You can go with this agama project if you need to use any other external OpenID Connect Provider (OP) instead of hello.coop SaaS service.
+
+
+[contributors-shield]: https://img.shields.io/github/contributors/GluuFederation/agama-hello.svg?style=for-the-badge
+[contributors-url]: https://github.com/GluuFederation/agama-hello/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/GluuFederation/agama-hello.svg?style=for-the-badge
+[forks-url]: https://github.com/GluuFederation/agama-hello/network/members
+[stars-shield]: https://img.shields.io/github/stars/GluuFederation/agama-hello?style=for-the-badge
+[stars-url]: https://github.com/GluuFederation/agama-hello/stargazers
+[issues-shield]: https://img.shields.io/github/issues/GluuFederation/agama-hello.svg?style=for-the-badge
+[issues-url]: https://github.com/GluuFederation/agama-hello/issues
+[license-shield]: https://img.shields.io/github/license/GluuFederation/agama-hello.svg?style=for-the-badge
+[license-url]: https://github.com/GluuFederation/agama-hello/blob/master/LICENSE.txt
