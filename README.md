@@ -32,10 +32,9 @@ claims.
 
 ## Add Java dependencies
 1. Download `agama-hello-custom-{version}.jar` from [Releases](https://github.com/GluuFederation/agama-hello/releases).
-2. `scp` this file to `/opt/jans/jetty/jans-auth/custom/libs/` on Auth Server
+2. `scp` the jar file to `/opt/jans/jetty/jans-auth/custom/libs/` on Auth Server
 3. On Auth Server,  edit `/opt/jans/jetty/jans-auth/webapps/jans-auth.xml` and
-append below line between `<set name="extractClasspath">...</Set>`. After
-editing it should look like this:
+add the jar file to the `<set name="extractClasspath">...</Set>` element. For example:
 ```
    <Configure class="org.eclipse.jetty.webapp.WebAppContext">
       <Set name="contextPath">/jans-auth</Set>
@@ -43,7 +42,10 @@ editing it should look like this:
           <Property name="jetty.webapps" default="." />/jans-auth.war
       </Set>
       <Set name="extractWAR">true</Set>
-      <Set name="extraClasspath">.../opt/jans/jetty/jans-auth/custom/libs/agama-hello-custom-{version}.jar,/opt/jans/jetty/jans-auth/custom/libs/jans-fido2-client.jar,/opt/jans/jetty/jans-auth/custom/libs/twilio.jar
+      <Set name="extraClasspath">
+         ...
+         /opt/jans/jetty/jans-auth/custom/libs/agama-hello-custom-{version}.jar,
+         ...
       </Set>
     </Configure>
 ```
