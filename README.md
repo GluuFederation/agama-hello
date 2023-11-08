@@ -2,11 +2,11 @@
   <img width="600" height="400" src="https://github.com/GluuFederation/agama-hello/assets/20867846/5158d850-dc31-4e09-a952-f8d89294dd89">
 </p>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![Apache License][license-shield]][license-url]
+[![Contributors][contributors-shield]](contributors-url)
+[![Forks][forks-shield]](forks-url)
+[![Stargazers][stars-shield]](stars-url)
+[![Issues][issues-shield]](issues-url)
+[![Apache License][license-shield]](license-url)
 
 # Agama-Hellō
 
@@ -66,7 +66,7 @@ After deploying the `agama-hello` projectm, extract the sample configuration:
     ![Screenshot 2023-11-08 at 11 29 48 AM](https://github.com/GluuFederation/agama-hello/assets/20867846/53178b8d-5d5d-45b6-9017-fa7bc4f54fe0)
 1. Modify the configuration file with your **hello.coop** client credentials,
 which you can find in the [console page](https://console.hello.coop) :
-````
+```
     {
       "hello.agama.inbound.hello": {},
       "hello.agama.inbound.hello_user": {},
@@ -89,7 +89,7 @@ which you can find in the [console page](https://console.hello.coop) :
       }
     }
 ```
-6. Import the modified configuration file using **`Import Configuration`** option.
+1. Import the modified configuration file using **`Import Configuration`** option.
 It will show successful result like below picture:
     ![import success](https://github.com/GluuFederation/agama-hello/assets/20867846/141cb8b8-4e8f-46f9-ada6-1d2228956197)
 
