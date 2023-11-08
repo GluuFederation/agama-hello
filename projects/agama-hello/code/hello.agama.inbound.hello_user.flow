@@ -1,0 +1,28 @@
+// vaildation access-token and retrieve userinfo
+Flow hello.agama.inbound.hello_user
+     Basepath ""
+     Inputs conf
+// log
+Log "@info hello-agama: user info retrieving flow processing..."
+obj = Trigger hello.agama.inbound.hello conf
+// assigned token and userinfo endpoint
+userInfoEndpoint = conf.userInfoEndpoint
+token = obj.data.access_token
+// map get request
+p | E = Call io.jans.util.NetworkUtils#mapFromGetRequestWithToken userInfoEndpoint token
+When E is not null
+     // return error state
+     Log "@error " E
+     // msg build
+     msg = ["Unable to retrieve user profile", E.message]
+     // string join
+     msg = Call java.lang.String#join " " msg
+     // return error message
+     it_gnasz = { success: false, error: msg }
+     Finish it_gnasz
+// profile log
+Log "@debug Profile data:\n" p
+// assign return data
+obj = { success: true, profile: p }
+// return response
+Finish obj
