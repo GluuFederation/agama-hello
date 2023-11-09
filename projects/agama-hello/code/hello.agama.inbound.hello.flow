@@ -2,8 +2,6 @@
 Flow hello.agama.inbound.hello
      Basepath ""
      Inputs oauthParams
-// obtain redirect uri from http url
-redirect_uri = Call io.jans.util.URLParsing#getRedirectUri 
 When oauthParams.redirectUri is null
      // obtain issuer from HTTP url
      issuer = Call io.jans.util.NetworkUtils#urlBeforeContextPath 
@@ -11,7 +9,7 @@ When oauthParams.redirectUri is null
      // build redirect uri and assigned to oauthParams
      oauthParams.redirectUri = Call java.lang.String#join "" list
 // log
-Log "@debug hello-agama: built redirect uri: " oauthParams.redirectUri redirect_uri
+Log "@debug hello-agama: built redirect uri: " oauthParams.redirectUri
 // create an instance of codegrant utility
 codeGrantUtil = Call io.jans.inbound.oauth2.CodeGrantUtil#new oauthParams
 // log
