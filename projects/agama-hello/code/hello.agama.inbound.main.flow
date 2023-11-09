@@ -14,7 +14,7 @@ When obj.success is true
      uid = Call io.jans.inbound.UserOnboardHelper#exec configs.uidPrefix profile
      // log success
      Log "@info hello-agama: welcome Onboard with uid: " uid
-     it_zorwt = { success: true, data: { userId: uid } }
-     Finish it_zorwt
-it_kzjsn = { success: false, error: "User onboard error" }
-Finish it_kzjsn
+     it_uttzt = { success: true, data: { userId: uid } }
+     Finish it_uttzt
+it_ohffv = { success: false, error: "User onboard error" }
+Finish it_ohffv
