@@ -116,6 +116,13 @@ an example of **agama-hello** in action:
             <sub style="font-size:14px"><b>Mobarak Hosen Shakil</b></sub>
         </a>
     </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/nynymike>
+            <img src=https://avatars.githubusercontent.com/u/3717101?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Michael Schwartz/>
+            <br />
+            <sub style="font-size:14px"><b>Michael Schwartz</b></sub>
+        </a>
+    </td>
 </tr>
 </table>
 
