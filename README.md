@@ -2,11 +2,12 @@
   <img width="600" height="400" src="https://github.com/GluuFederation/agama-hello/assets/20867846/5158d850-dc31-4e09-a952-f8d89294dd89">
 </p>
 
-[![Contributors][contributors-shield]](contributors-url)
-[![Forks][forks-shield]](forks-url)
-[![Stargazers][stars-shield]](stars-url)
-[![Issues][issues-shield]](issues-url)
-[![Apache License][license-shield]](license-url)
+<!-- These are statistics for this repository-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Apache License][license-shield]][license-url]
 
 # Agama-Hellō
 
@@ -31,7 +32,7 @@ claims.
 1. Running instance of Jans Auth Server or Gluu Flex
 
 ## Add Java dependencies
-1. Download `agama-hello-custom-{version}.jar` from [Releases](https://github.com/GluuFederation/agama-hello/releases).
+1. Download latest [agama-hello-custom.jar](https://github.com/GluuFederation/agama-hello/releases/latest/download/agama-hello-custom.jar) from [Releases](https://github.com/GluuFederation/agama-hello/releases).
 2. `scp` the jar file to `/opt/jans/jetty/jans-auth/custom/libs/` on Auth Server
 3. On Auth Server,  edit `/opt/jans/jetty/jans-auth/webapps/jans-auth.xml` and
 add the jar file to the `<set name="extractClasspath">...</Set>` element. For example:
@@ -61,7 +62,7 @@ Download the latest [agama-hello.gama](https://github.com/GluuFederation/agama-h
 
 ## Configuration
 
-After deploying the `agama-hello` projectm, extract the sample configuration:
+After deploying the `agama-hello` project, extract the sample configuration:
 1. Move to the top of the agama-project using `jans-tui` then press `c` It will popup with the below options:
     ![Screenshot 2023-11-08 at 11 32 48 AM](https://github.com/GluuFederation/agama-hello/assets/20867846/8ccc6bd2-6dc2-4c79-920a-db5cc687c8b5)
 1. Select `export sample config` to extract sample configuration into a file.
@@ -127,6 +128,7 @@ This project is licensed under the [Apache 2.0](https://github.com/GluuFederatio
 
 This project based on [agama-openid](https://github.com/GluuFederation/agama-openid).
 
+<!-- This are stats url reference for this repository -->
 [contributors-shield]: https://img.shields.io/github/contributors/GluuFederation/agama-hello.svg?style=for-the-badge
 [contributors-url]: https://github.com/GluuFederation/agama-hello/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/GluuFederation/agama-hello.svg?style=for-the-badge
