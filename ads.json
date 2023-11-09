@@ -37,7 +37,24 @@
                 "uidPrefix": "hello-"
             },
             "hello.agama.inbound.hello": {},
-            "hello.agama.inbound.hello_user": {}
+            "hello.agama.inbound.hello_user": {},
+            "": {
+                "hello": {
+                    "authzEndpoint": "https://wallet.hello.coop/authorize",
+                    "tokenEndpoint": "https://wallet.hello.coop/oauth/token",
+                    "userInfoEndpoint": "https://wallet.hello.coop/oauth/userinfo",
+                    "clientId": "CLIENT_INDENTIFIER",
+                    "clientSecret": "CLIENT_SECRET",
+                    "scopes": [
+                        "openid"
+                    ],
+                    "clientCredsInRequestBody": true,
+                    "custParamsAuthReq": {},
+                    "custParamsTokenReq": {},
+                    "redirectUri": " "
+                },
+                "uidPrefix": "hello-"
+            }
         },
         "name": "agama-hello"
     }
