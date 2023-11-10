@@ -1,7 +1,7 @@
 name: Add contributors
 on:
   schedule:
-    - cron:  '00 07 * * *'
+    - cron:  '20 02 * * *'
   push:
     branches: 
       - master
@@ -21,3 +21,4 @@ jobs:
         PATH: '/README.md'
         COMMIT_MESSAGE: 'docs(README): update contributors'
         AVATAR_SHAPE: 'round'
+        IGNORED_CONTRIBUTORS: 'Michael Schwartz'
