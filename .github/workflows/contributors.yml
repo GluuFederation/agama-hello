@@ -1,7 +1,7 @@
 name: Add contributors
 on:
   schedule:
-    - cron:  '20 02 * * *'
+    - cron:  '0 0 1 * *'
   push:
     branches: 
       - master
