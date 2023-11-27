@@ -1,0 +1,61 @@
+{
+    "agama-hello": {
+        "projectName": "agama-hello",
+        "description": "Agama Project to support Social Login from the Hello SaaS service",
+        "type": "community",
+        "author": "GluuFederation",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/GluuFederation/agama-hello",
+        "githubUri": "https://github.com/GluuFederation/agama-hello",
+        "license": "apache-2.0",
+        "lastUpdated": "1699339509142",
+        "tags": [
+            "openid-connect",
+            "jans",
+            "social-logins",
+            "authentication"
+        ],
+        "noDirectLaunch": [
+            "hello.agama.inbound.hello"
+        ],
+        "configs": {
+            "hello.agama.inbound.main": {
+                "hello": {
+                    "authzEndpoint": "https://wallet.hello.coop/authorize",
+                    "tokenEndpoint": "https://wallet.hello.coop/oauth/token",
+                    "userInfoEndpoint": "https://wallet.hello.coop/oauth/userinfo",
+                    "clientId": "CLIENT_INDENTIFIER",
+                    "clientSecret": "CLIENT_SECRET",
+                    "scopes": [
+                        "openid"
+                    ],
+                    "clientCredsInRequestBody": true,
+                    "custParamsAuthReq": {},
+                    "custParamsTokenReq": {},
+                    "redirectUri": " "
+                },
+                "uidPrefix": "hello-"
+            },
+            "hello.agama.inbound.hello": {},
+            "hello.agama.inbound.hello_user": {},
+            "": {
+                "hello": {
+                    "authzEndpoint": "https://wallet.hello.coop/authorize",
+                    "tokenEndpoint": "https://wallet.hello.coop/oauth/token",
+                    "userInfoEndpoint": "https://wallet.hello.coop/oauth/userinfo",
+                    "clientId": "CLIENT_INDENTIFIER",
+                    "clientSecret": "CLIENT_SECRET",
+                    "scopes": [
+                        "openid"
+                    ],
+                    "clientCredsInRequestBody": true,
+                    "custParamsAuthReq": {},
+                    "custParamsTokenReq": {},
+                    "redirectUri": " "
+                },
+                "uidPrefix": "hello-"
+            }
+        },
+        "name": "agama-hello"
+    }
+}

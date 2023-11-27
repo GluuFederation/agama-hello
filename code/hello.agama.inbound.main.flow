@@ -1,0 +1,20 @@
+// hello-agama is an inbound OpenID identity flow to integrate hello.coop for social logins
+Flow hello.agama.inbound.main
+     Basepath ""
+     Configs configs
+// log
+Log "@info hello-agama: init main flow\n redirecting to RFAC flow"
+// obtain access token
+obj = Trigger hello.agama.inbound.hello_user configs.hello
+// login successful log
+Log "@debug hello-agama: hello.coop login successful with data: " obj
+When obj.success is true
+     profile = obj.profile
+     // user provisioning and retrieve user uid
+     uid = Call io.jans.inbound.UserOnboardHelper#exec configs.uidPrefix profile
+     // log success
+     Log "@info hello-agama: welcome Onboard with uid: " uid
+     it_uttzt = { success: true, data: { userId: uid } }
+     Finish it_uttzt
+it_ohffv = { success: false, error: "User onboard error" }
+Finish it_ohffv
