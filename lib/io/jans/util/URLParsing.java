@@ -27,27 +27,4 @@ public class URLParsing {
         }
     }
 
-    public static Map<String, String> extractParametersFromUrl(String urlString) {
-        Map<String, String> parameters = new HashMap<>();
-
-        try {
-            URL url = new URL(urlString);
-            String query = url.getQuery();
-            if (query != null) {
-                String[] pairs = query.split("&");
-                for (String pair : pairs) {
-                    String[] keyValue = pair.split("=");
-                    if (keyValue.length == 2) {
-                        String key = keyValue[0];
-                        String value = keyValue[1];
-                        parameters.put(key, value);
-                    }
-                }
-            }
-        } catch (Exception e) {
-            LOG.debug(e);
-            e.printStackTrace();
-        }
-        return parameters;
-    }
 }
