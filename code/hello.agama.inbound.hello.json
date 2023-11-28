@@ -135,7 +135,7 @@
 					"maxIterationVariableName": "",
 					"logLevel": "debug",
 					"assignCallbackResult": "",
-					"displayName": "",
+					"displayName": "redirect log",
 					"nodeColor": "",
 					"exceptionVariableField": "",
 					"hasExtraData": false,
@@ -145,7 +145,7 @@
 				"skake": false,
 				"agamasource": "Agama-when-Node-be5d63ff-3859-4601-9225-4cf9e12807fd"
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 470.72540483653347,
@@ -226,7 +226,7 @@
 				"x": 2715.268888625839,
 				"y": 88.93660365179076
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1950,8 +1950,8 @@
 		}
 	],
 	"viewport": {
-		"x": -10.755016620403467,
-		"y": 86.02083029053085,
-		"zoom": 0.702923907786778
+		"x": 53.62541745171126,
+		"y": 40.463851493208466,
+		"zoom": 0.8769002335021968
 	}
 }
