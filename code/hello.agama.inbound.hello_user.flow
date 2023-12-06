@@ -18,8 +18,8 @@ When E is not null
      // string join
      msg = Call java.lang.String#join " " msg
      // return error message
-     it_gnasz = { success: false, error: msg }
-     Finish it_gnasz
+     it_rmsjk = { success: false, error: msg }
+     Finish it_rmsjk
 // profile log
 Log "@debug Profile data:\n" p
 // assign return data
