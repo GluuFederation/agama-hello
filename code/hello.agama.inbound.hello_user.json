@@ -70,7 +70,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1600.884730240743,
@@ -779,7 +779,9 @@
 						}
 					],
 					"callType": "Call static method",
-					"arguments": "conf",
+					"arguments": [
+						"conf"
+					],
 					"logMessage": "",
 					"templatePath": "",
 					"maxIteration": "",
@@ -794,7 +796,7 @@
 					"maxIterationVariableName": "",
 					"logLevel": "",
 					"assignCallbackResult": "",
-					"displayName": "",
+					"displayName": "trigger to hello.coop login",
 					"nodeColor": "",
 					"exceptionVariableField": "",
 					"hasExtraData": false,
@@ -802,7 +804,8 @@
 					"nodeIcon": "fluent-mdl2:trigger-approval",
 					"flowFileName": "hello.agama.inbound.hello",
 					"asssignedVariableName": "obj"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -881,7 +884,8 @@
 					"hasExtraData": false,
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -1185,8 +1189,8 @@
 		}
 	],
 	"viewport": {
-		"x": 2.45085513277445,
-		"y": 70.69902989900015,
-		"zoom": 0.9490883234786581
+		"x": -12.859795450610818,
+		"y": 41.316559278213674,
+		"zoom": 0.994313335135908
 	}
 }
