@@ -3,7 +3,7 @@
     "description": "Agama Project to support Social Login from the Hello SaaS service",
     "type": "community",
     "author": "GluuFederation",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "authorWebsite": "https://github.com/GluuFederation/agama-hello",
     "githubUri": "https://github.com/GluuFederation/agama-hello",
     "license": "apache-2.0",
@@ -15,7 +15,8 @@
         "authentication"
     ],
     "noDirectLaunch": [
-        "hello.agama.inbound.hello"
+        "hello.agama.inbound.hello",
+        "hello.agama.inbound.hello_user"
     ],
     "configs": {
         "hello.agama.inbound.main": {
@@ -31,7 +32,7 @@
                 "clientCredsInRequestBody": true,
                 "custParamsAuthReq": {},
                 "custParamsTokenReq": {},
-                "redirectUri": " "
+                "redirectUri": null
             },
             "uidPrefix": "hello-"
         },
