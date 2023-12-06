@@ -15,7 +15,8 @@
         "authentication"
     ],
     "noDirectLaunch": [
-        "hello.agama.inbound.hello"
+        "hello.agama.inbound.hello",
+        "hello.agama.inbound.hello_user"
     ],
     "configs": {
         "hello.agama.inbound.main": {
