@@ -28,7 +28,6 @@ public class UserOnboardHelper {
             logger.debug("Not found. Inserting entry");
             user = new User();
             user.setUserId(uid);
-            user.setDisplayName(profile.get("name").toString());
             userService.addUser(user, true);
         }
         return uid;
