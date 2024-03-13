@@ -37,7 +37,8 @@
             "uidPrefix": "hello-"
         },
         "hello.agama.inbound.hello": {},
-        "hello.agama.inbound.hello_user": {}
+        "hello.agama.inbound.hello_user": {},
+        "org.gluu.hello.coop": {}
     },
     "name": "agama-hello"
 }
