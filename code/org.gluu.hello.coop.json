@@ -1,0 +1,35 @@
+[
+  {
+    "id": "Agama-start-Flow-af5282b4-b8cb-4d1d-b7de-ceb44bfbc43f",
+    "type": "start",
+    "sourcePosition": "right",
+    "data": {
+      "id": "Agama-start-Flow-af5282b4-b8cb-4d1d-b7de-ceb44bfbc43f",
+      "type": "Agama-start-Flow",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "inRepeatBlock": false,
+      "agamaData": {
+        "id": "Agama-start-Flow-af5282b4-b8cb-4d1d-b7de-ceb44bfbc43f",
+        "type": "Agama-start-Flow",
+        "displayName": "hello.coop social login",
+        "hasComment": true,
+        "comment": "",
+        "isTopLevelFlow": true,
+        "basepath": "",
+        "configParams": "{}",
+        "nodeIcon": "material-symbols:line-start-square",
+        "timeout": "",
+        "inputs": "",
+        "configs": "",
+        "flowname": "org.gluu.hello.coop"
+      }
+    },
+    "position": {
+      "x": 30,
+      "y": 30
+    }
+  }
+]
