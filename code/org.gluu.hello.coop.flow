@@ -4,8 +4,8 @@ Log "@info [org.gluu.hello.coop]: initiated flow"
 checkDependency = true
 When checkDependency is true
      data = Trigger org.gluu.inbound.openid 
-     Log "@debug data received from openid flow: %", data
+     Log "@debug data received from openid flow: " data
      Finish data
 Log "@error openid agama flow is missing. please install agama-openid first"
-it_nvemp = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
-Finish it_nvemp
+it_gvolg = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
+Finish it_gvolg
