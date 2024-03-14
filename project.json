@@ -16,7 +16,8 @@
     ],
     "noDirectLaunch": [
         "hello.agama.inbound.hello",
-        "hello.agama.inbound.hello_user"
+        "hello.agama.inbound.hello_user",
+        "hello.agama.inbound.main"
     ],
     "configs": {
         "hello.agama.inbound.main": {
