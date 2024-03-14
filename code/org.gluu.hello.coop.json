@@ -33,9 +33,10 @@
 					"returnVariable": "agama-openid flow is missing. please install agama-openid first.",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 1118.5593482103484,
 				"y": 24.789277268871842
@@ -75,7 +76,8 @@
 					"logMessage": "\"openid agama flow is missing. please install agama-openid first\"",
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -118,7 +120,8 @@
 					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "return data"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -128,8 +131,8 @@
 			}
 		},
 		{
-			"width": 170,
-			"height": 123,
+			"width": 168,
+			"height": 120,
 			"id": "Agama-log-Node-00aa4ac2-4127-4269-ac60-30dde5112879",
 			"position": {
 				"x": 980.5172036641227,
@@ -157,12 +160,13 @@
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"logMessage": "\"data received from openid flow: %\", data",
+					"logMessage": "\"data received from openid flow: \" data",
 					"logLevel": "debug",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": true
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 980.5172036641227,
@@ -204,7 +208,8 @@
 					"arguments": [],
 					"asssignedVariableName": "data",
 					"exceptionVariableField": ""
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -256,7 +261,8 @@
 				"handles": [
 					"Agama-when-Node-e2327d09-657c-46d0-9a94-fb9259a48872.FAILURE",
 					"Agama-when-Node-e2327d09-657c-46d0-9a94-fb9259a48872.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -303,7 +309,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -345,7 +352,8 @@
 					"logMessage": "\"[org.gluu.hello.coop]: initiated flow\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -538,7 +546,7 @@
 		}
 	],
 	"viewport": {
-		"x": -399.05181303383915,
+		"x": -398.05181303383915,
 		"y": 66.4489144899378,
 		"zoom": 0.9595597881519756
 	}
