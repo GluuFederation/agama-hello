@@ -2,7 +2,7 @@
 	"nodes": [
 		{
 			"width": 170,
-			"height": 122,
+			"height": 123,
 			"id": "finish-0c825305-dcb0-4675-b423-dbb2384085ad",
 			"position": {
 				"x": 1110.3593649146205,
@@ -82,7 +82,7 @@
 		},
 		{
 			"width": 170,
-			"height": 122,
+			"height": 123,
 			"id": "Agama-call-Node-d3fe5de9-7920-438c-bde2-432d4fb2d222",
 			"position": {
 				"x": 1176.3593649146205,
@@ -161,7 +161,7 @@
 		},
 		{
 			"width": 170,
-			"height": 122,
+			"height": 123,
 			"id": "Agama-assignment-Node-fb4a1009-2ab8-4409-b6ef-4bf889714841",
 			"position": {
 				"x": 984.0815857041591,
@@ -236,7 +236,7 @@
 		},
 		{
 			"width": 170,
-			"height": 122,
+			"height": 123,
 			"id": "Agama-log-Node-08e946cf-ebdc-4262-ad79-e55235b29ad9",
 			"position": {
 				"x": 655,
@@ -311,7 +311,7 @@
 		},
 		{
 			"width": 170,
-			"height": 122,
+			"height": 123,
 			"id": "Agama-trigger-Node-6fbcf7b7-30b1-4303-9403-d5ac25c14388",
 			"position": {
 				"x": 455,
@@ -388,7 +388,7 @@
 		},
 		{
 			"width": 170,
-			"height": 122,
+			"height": 123,
 			"id": "Agama-log-Node-4a218a80-0183-4d32-abcb-2590d2d3f890",
 			"position": {
 				"x": 255,
@@ -463,7 +463,7 @@
 		},
 		{
 			"width": 170,
-			"height": 122,
+			"height": 123,
 			"id": "Agama-start-Flow-bf8e31e8-0404-46d4-a132-c63a01da3e39",
 			"type": "start",
 			"sourcePosition": "right",
@@ -483,7 +483,7 @@
 					"hasRepeat": false,
 					"hasComment": true,
 					"hasNoRepeat": false,
-					"isTopLevelFlow": true,
+					"isTopLevelFlow": false,
 					"inRepeatBlock": false,
 					"name": "",
 					"basepath": "",
@@ -521,7 +521,9 @@
 					"nodeIcon": "material-symbols:line-start-square",
 					"flowname": "hello.agama.inbound.main",
 					"flowName": "hello.agama.inbound.main",
-					"configs": "configs"
+					"configs": "configs",
+					"timeout": "",
+					"inputs": ""
 				},
 				"skake": false
 			},
@@ -576,7 +578,15 @@
 					"hasFailure": true,
 					"position": {
 						"x": 1886.3705101235957
-					}
+					},
+					"conditions": [
+						{
+							"variable": "obj.success",
+							"operator": "is",
+							"dataValue": "true",
+							"combinator": "none"
+						}
+					]
 				},
 				"handles": [
 					"Agama-when-Node-7b938cc0-4b13-4de5-a975-be5174a1bd63.FAILURE",
@@ -596,7 +606,7 @@
 		},
 		{
 			"width": 170,
-			"height": 122,
+			"height": 123,
 			"id": "Agama-log-Node-1a715907-9f88-44d8-8e57-2a1ff5580fa5",
 			"position": {
 				"x": 1362.0422816994837,
@@ -671,7 +681,7 @@
 		},
 		{
 			"width": 170,
-			"height": 122,
+			"height": 123,
 			"id": "finish-e94751dc-a0ee-4f0a-906f-c1aaee47a0bf",
 			"position": {
 				"x": 1546.0815857041594,
@@ -1061,8 +1071,8 @@
 		}
 	],
 	"viewport": {
-		"x": 34.21349184868404,
-		"y": 22.502216031861337,
-		"zoom": 0.9607432899936472
+		"x": 10,
+		"y": 15,
+		"zoom": 1
 	}
 }
