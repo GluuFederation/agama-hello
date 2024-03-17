@@ -178,7 +178,7 @@
 			"height": 123,
 			"id": "Agama-trigger-Node-cf343c1b-a4e6-4f32-84a3-b4e1323d51fe",
 			"position": {
-				"x": 781.5593482103484,
+				"x": 780.5593482103484,
 				"y": 308.7892772688719
 			},
 			"type": "trigger",
@@ -190,7 +190,7 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 781.5593482103484,
+					"x": 780.5593482103484,
 					"y": 308.7892772688719
 				},
 				"agamaData": {
@@ -206,16 +206,16 @@
 					"nodeIcon": "fluent-mdl2:trigger-approval",
 					"flowFileName": "org.gluu.inbound.oauth2.AuthzCodeWithUserInfo",
 					"arguments": [
-						"hello"
+						"oauthParamas"
 					],
 					"asssignedVariableName": "data",
 					"exceptionVariableField": ""
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
-				"x": 781.5593482103484,
+				"x": 780.5593482103484,
 				"y": 308.7892772688719
 			},
 			"dragging": false
@@ -308,6 +308,11 @@
 							"variableTypeCheck": false,
 							"assignmentExpression": "true",
 							"assignedVariableName": "checkDependency"
+						},
+						{
+							"variableTypeCheck": false,
+							"assignmentExpression": "conf.hello",
+							"assignedVariableName": "oauthParamas"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
@@ -326,7 +331,7 @@
 			"height": 123,
 			"id": "Agama-log-Node-b9b68dfc-2ed4-43f9-a5bd-4382021da217",
 			"position": {
-				"x": 239.37930091603062,
+				"x": 238.37930091603062,
 				"y": 84.19151640373263
 			},
 			"type": "log",
@@ -338,7 +343,7 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 239.37930091603062,
+					"x": 238.37930091603062,
 					"y": 84.19151640373263
 				},
 				"agamaData": {
@@ -351,7 +356,7 @@
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"logMessage": "\"[org.gluu.hello.coop]: initiated flow\"",
+					"logMessage": "\"[org.gluu.hello.coop]: initiated flow with config\" conf.hello",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -359,7 +364,7 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 239.37930091603062,
+				"x": 238.37930091603062,
 				"y": 84.19151640373263
 			},
 			"dragging": false
@@ -374,7 +379,7 @@
 				"id": "Agama-start-Flow-af5282b4-b8cb-4d1d-b7de-ceb44bfbc43f",
 				"type": "Agama-start-Flow",
 				"position": {
-					"x": 23.70498817642067,
+					"x": 24.70498817642067,
 					"y": 86.27580549618392
 				},
 				"inRepeatBlock": false,
@@ -396,13 +401,13 @@
 				"skake": false
 			},
 			"position": {
-				"x": 23.70498817642067,
+				"x": 24.70498817642067,
 				"y": 86.27580549618392
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 23.70498817642067,
+				"x": 24.70498817642067,
 				"y": 86.27580549618392
 			}
 		}
@@ -548,8 +553,8 @@
 		}
 	],
 	"viewport": {
-		"x": 237,
-		"y": 59,
+		"x": -94,
+		"y": 88,
 		"zoom": 1
 	}
 }
