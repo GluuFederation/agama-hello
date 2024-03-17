@@ -1,11 +1,12 @@
 Flow org.gluu.hello.coop
      Basepath ""
+     Configs conf
 Log "@info [org.gluu.hello.coop]: initiated flow"
 checkDependency = true
 When checkDependency is true
-     data = Trigger org.gluu.inbound.openid 
+     data = Trigger org.gluu.inbound.oauth2.AuthzCodeWithUserInfo hello
      Log "@debug data received from openid flow: " data
      Finish data
 Log "@error openid agama flow is missing. please install agama-openid first"
-it_gvolg = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
-Finish it_gvolg
+it_asidy = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
+Finish it_asidy
