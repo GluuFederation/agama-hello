@@ -131,8 +131,8 @@
 			}
 		},
 		{
-			"width": 168,
-			"height": 120,
+			"width": 170,
+			"height": 123,
 			"id": "Agama-log-Node-00aa4ac2-4127-4269-ac60-30dde5112879",
 			"position": {
 				"x": 980.5172036641227,
@@ -164,9 +164,9 @@
 					"logLevel": "debug",
 					"nodeIcon": "octicon:log-16"
 				},
-				"skake": true
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 980.5172036641227,
@@ -204,14 +204,16 @@
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
 					"nodeIcon": "fluent-mdl2:trigger-approval",
-					"flowFileName": "org.gluu.inbound.openid",
-					"arguments": [],
+					"flowFileName": "org.gluu.inbound.oauth2.AuthzCodeWithUserInfo",
+					"arguments": [
+						"hello"
+					],
 					"asssignedVariableName": "data",
 					"exceptionVariableField": ""
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 781.5593482103484,
 				"y": 308.7892772688719
@@ -384,11 +386,11 @@
 					"comment": "",
 					"isTopLevelFlow": true,
 					"basepath": "",
-					"configParams": "{}",
+					"configParams": "{\n  \"hello\": {\n    \"authzEndpoint\": \"https://wallet.hello.coop/authorize\",\n    \"tokenEndpoint\": \"https://wallet.hello.coop/oauth/token\",\n    \"userInfoEndpoint\": \"https://wallet.hello.coop/oauth/userinfo\",\n    \"clientId\": \"CLIENT_INDENTIFIER\",\n    \"clientSecret\": \"CLIENT_SECRET\",\n    \"scopes\": [\n      \"openid\"\n    ],\n    \"clientCredsInRequestBody\": true,\n    \"custParamsAuthReq\": {},\n    \"custParamsTokenReq\": {},\n    \"redirectUri\": null\n  },\n  \"uidPrefix\": \"hello-\"\n}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
 					"inputs": "",
-					"configs": "",
+					"configs": "conf",
 					"flowname": "org.gluu.hello.coop"
 				},
 				"skake": false
@@ -546,8 +548,8 @@
 		}
 	],
 	"viewport": {
-		"x": -398.05181303383915,
-		"y": 66.4489144899378,
-		"zoom": 0.9595597881519756
+		"x": -170,
+		"y": -40,
+		"zoom": 1
 	}
 }
