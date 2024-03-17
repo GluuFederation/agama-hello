@@ -517,7 +517,7 @@
 					"nodeColor": "",
 					"exceptionVariableField": "",
 					"hasExtraData": false,
-					"configParams": "{\n  \"hello\": {\n    \"authzEndpoint\": \"https://wallet.hello.coop/authorize\",\n    \"tokenEndpoint\": \"https://wallet.hello.coop/oauth/token\",\n    \"userInfoEndpoint\": \"https://wallet.hello.coop/oauth/userinfo\",\n    \"clientId\": \"CLIENT_INDENTIFIER\",\n    \"clientSecret\": \"CLIENT_SECRET\",\n    \"scopes\": [\n      \"openid\"\n    ],\n    \"clientCredsInRequestBody\": true,\n    \"custParamsAuthReq\": {},\n    \"custParamsTokenReq\": {},\n    \"redirectUri\": null\n  },\n  \"uidPrefix\": \"hello-\"\n}",
+					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"flowname": "hello.agama.inbound.main",
 					"flowName": "hello.agama.inbound.main",
