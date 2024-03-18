@@ -178,8 +178,8 @@
 			"height": 123,
 			"id": "Agama-trigger-Node-cf343c1b-a4e6-4f32-84a3-b4e1323d51fe",
 			"position": {
-				"x": 1008.4013944294456,
-				"y": 309.7892772688719
+				"x": 974.4013944294456,
+				"y": 297.7892772688719
 			},
 			"type": "trigger",
 			"data": {
@@ -190,8 +190,8 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 1008.4013944294456,
-					"y": 309.7892772688719
+					"x": 974.4013944294456,
+					"y": 297.7892772688719
 				},
 				"agamaData": {
 					"id": "Agama-trigger-Node-cf343c1b-a4e6-4f32-84a3-b4e1323d51fe",
@@ -206,17 +206,17 @@
 					"nodeIcon": "fluent-mdl2:trigger-approval",
 					"flowFileName": "org.gluu.inbound.oauth2.AuthzCodeWithUserInfo",
 					"arguments": [
-						"oauthParamas"
+						"oauthParams"
 					],
 					"asssignedVariableName": "data",
 					"exceptionVariableField": ""
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
-				"x": 1008.4013944294456,
-				"y": 309.7892772688719
+				"x": 974.4013944294456,
+				"y": 297.7892772688719
 			},
 			"dragging": false
 		},
@@ -347,8 +347,8 @@
 						},
 						{
 							"variableTypeCheck": false,
-							"assignmentExpression": "config",
-							"assignedVariableName": "oauthParamas"
+							"assignmentExpression": "config.hello",
+							"assignedVariableName": "oauthParams"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
@@ -390,19 +390,19 @@
 					"id": "Agama-log-Node-54776811-140b-46e5-9fc1-7fbd10aad99f",
 					"parentId": "Agama-assignment-Node-6a0f706a-0acd-480c-896c-d532d6d73ae3",
 					"type": "Agama-log-Node",
-					"displayName": "log info",
+					"displayName": "log ((debug)",
 					"hasComment": true,
 					"comment": "",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"logMessage": "\"configurations parsed successfully\"",
-					"logLevel": "info",
+					"logMessage": "\"configurations parsed successfully \" oauthParams",
+					"logLevel": "debug",
 					"nodeIcon": "octicon:log-16"
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 641.2958565289947,
 				"y": 77.94927353037855
@@ -414,8 +414,8 @@
 			"height": 140,
 			"id": "Agama-when-Node-e2327d09-657c-46d0-9a94-fb9259a48872",
 			"position": {
-				"x": 817.5172036641227,
-				"y": 79.83142181509749
+				"x": 837.5172036641227,
+				"y": 76.83142181509749
 			},
 			"parentId": "Agama-log-Node-54776811-140b-46e5-9fc1-7fbd10aad99f",
 			"type": "when",
@@ -427,8 +427,8 @@
 				"inRepeatBlock": "",
 				"inIterateBlock": "",
 				"position": {
-					"x": 817.5172036641227,
-					"y": 79.83142181509749
+					"x": 837.5172036641227,
+					"y": 76.83142181509749
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-e2327d09-657c-46d0-9a94-fb9259a48872",
@@ -460,8 +460,8 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 817.5172036641227,
-				"y": 79.83142181509749
+				"x": 837.5172036641227,
+				"y": 76.83142181509749
 			},
 			"dragging": false,
 			"whenCondition": "",
@@ -650,8 +650,8 @@
 		}
 	],
 	"viewport": {
-		"x": 10,
-		"y": 15,
-		"zoom": 1
+		"x": -1337.453125,
+		"y": -215.01214599609375,
+		"zoom": 2
 	}
 }
