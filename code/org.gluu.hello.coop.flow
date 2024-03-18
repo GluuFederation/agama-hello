@@ -10,5 +10,5 @@ When checkDependency is true
      Log "@debug data received from openid flow: " data
      Finish data
 Log "@error openid agama flow is missing. please install agama-openid first"
-it_ohsmw = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
-Finish it_ohsmw
+it_tcyuq = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
+Finish it_tcyuq
