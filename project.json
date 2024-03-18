@@ -15,11 +15,10 @@
         "authentication"
     ],
     "noDirectLaunch": [
-        "hello.agama.inbound.hello_user"
+        "hello.agama.inbound.hello"
     ],
     "configs": {
         "hello.agama.inbound.main": {},
-        "hello.agama.inbound.hello_user": {},
         "org.gluu.hello.coop": {
             "hello": {
                 "authzEndpoint": "https://wallet.hello.coop/authorize",
