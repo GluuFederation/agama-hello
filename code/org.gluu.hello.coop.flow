@@ -9,8 +9,8 @@ When checkDependency is true
      data = Trigger org.gluu.inbound.oauth2.AuthzCodeWithUserInfo oauthParams
      Log "@debug data received from openid oauth flow: " data
      uid = Call io.jans.inbound.UserOnboardHelper#exec uidPrefix data.data.profile
-it_yzqqc = {success:true, data: { userId: uid }}
-Finish it_yzqqc
+it_ujqfe = {success:true, data: { userId: uid }}
+Finish it_ujqfe
 Log "@error openid agama flow is missing. please install agama-openid first"
-it_elamy = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
-Finish it_elamy
+it_ltxjs = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
+Finish it_ltxjs
