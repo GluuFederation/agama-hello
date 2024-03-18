@@ -14,8 +14,7 @@
         "social-logins",
         "authentication"
     ],
-    "noDirectLaunch": [
-    ],
+    "noDirectLaunch": [],
     "configs": {
         "org.gluu.hello.coop": {
             "hello": {
