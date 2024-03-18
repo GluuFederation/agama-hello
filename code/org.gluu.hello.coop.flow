@@ -7,8 +7,10 @@ oauthParams = config.hello
 Log "@debug configurations parsed successfully " oauthParams
 When checkDependency is true
      data = Trigger org.gluu.inbound.oauth2.AuthzCodeWithUserInfo oauthParams
-     Log "@debug data received from openid flow: " data
-     Finish data
+     Log "@debug data received from openid oauth flow: " data
+     uid = Call io.jans.inbound.UserOnboardHelper#exec uidPrefix data
+it_qbteh = {success:true, data: { userId: uid }}
+Finish it_qbteh
 Log "@error openid agama flow is missing. please install agama-openid first"
-it_tcyuq = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
-Finish it_tcyuq
+it_wnoez = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
+Finish it_wnoez
