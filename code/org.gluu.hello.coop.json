@@ -206,8 +206,8 @@
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"logMessage": "\"[org.gluu.hello.coop]: initiated flow with config\"",
-					"logLevel": "info",
+					"logMessage": "\"[org.gluu.hello.coop]: initiated flow with config \" config",
+					"logLevel": "debug",
 					"nodeIcon": "octicon:log-16",
 					"hasSuccess": "",
 					"hasFailure": "",
@@ -216,7 +216,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 238.37930091603062,
 				"y": 84.19151640373263
@@ -311,7 +311,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 458.2958565289947,
 				"y": 80.94927353037855
@@ -722,8 +722,8 @@
 		}
 	],
 	"viewport": {
-		"x": 321.4969649232703,
-		"y": 139.89736236621582,
-		"zoom": 0.6383787355312266
+		"x": 180.80077901566756,
+		"y": 111.37064892512313,
+		"zoom": 0.6653938027793099
 	}
 }
