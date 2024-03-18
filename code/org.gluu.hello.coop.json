@@ -5,8 +5,8 @@
 			"height": 123,
 			"id": "finish-d6c6d984-a818-4bcc-8ca7-9f787841e074",
 			"position": {
-				"x": 1418.5593482103484,
-				"y": 24.789277268871842
+				"x": 1324.5712551544746,
+				"y": 15.390467963284493
 			},
 			"type": "finish",
 			"data": {
@@ -18,8 +18,8 @@
 				"inIterateBlock": false,
 				"handles": [],
 				"position": {
-					"x": 1418.5593482103484,
-					"y": 24.789277268871842
+					"x": 1324.5712551544746,
+					"y": 15.390467963284493
 				},
 				"agamaData": {
 					"id": "finish-d6c6d984-a818-4bcc-8ca7-9f787841e074",
@@ -36,10 +36,10 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
-				"x": 1418.5593482103484,
-				"y": 24.789277268871842
+				"x": 1324.5712551544746,
+				"y": 15.390467963284493
 			},
 			"dragging": false
 		},
@@ -48,8 +48,8 @@
 			"height": 123,
 			"id": "Agama-log-Node-f9d88e4e-23b7-46d2-a92e-427a82e1faf5",
 			"position": {
-				"x": 1218.5593482103484,
-				"y": 25.831421815097485
+				"x": 1107.3401047608977,
+				"y": 17.99908072710798
 			},
 			"type": "log",
 			"data": {
@@ -60,8 +60,8 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 1218.5593482103484,
-					"y": 25.831421815097485
+					"x": 1107.3401047608977,
+					"y": 17.99908072710798
 				},
 				"agamaData": {
 					"id": "Agama-log-Node-f9d88e4e-23b7-46d2-a92e-427a82e1faf5",
@@ -81,8 +81,8 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 1218.5593482103484,
-				"y": 25.831421815097485
+				"x": 1107.3401047608977,
+				"y": 17.99908072710798
 			},
 			"dragging": false
 		},
@@ -465,7 +465,8 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "uid"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -511,7 +512,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1630.5172036641227,
@@ -721,8 +722,8 @@
 		}
 	],
 	"viewport": {
-		"x": -860,
-		"y": 55,
-		"zoom": 1
+		"x": 165.49696492327035,
+		"y": 53.897362366215816,
+		"zoom": 0.6383787355312266
 	}
 }
