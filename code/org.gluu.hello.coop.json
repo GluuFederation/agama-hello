@@ -178,7 +178,7 @@
 			"height": 123,
 			"id": "Agama-trigger-Node-cf343c1b-a4e6-4f32-84a3-b4e1323d51fe",
 			"position": {
-				"x": 780.5593482103484,
+				"x": 779.4013944294456,
 				"y": 308.7892772688719
 			},
 			"type": "trigger",
@@ -190,7 +190,7 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 780.5593482103484,
+					"x": 779.4013944294456,
 					"y": 308.7892772688719
 				},
 				"agamaData": {
@@ -213,9 +213,9 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
-				"x": 780.5593482103484,
+				"x": 779.4013944294456,
 				"y": 308.7892772688719
 			},
 			"dragging": false
@@ -278,8 +278,8 @@
 			"height": 123,
 			"id": "Agama-assignment-Node-6a0f706a-0acd-480c-896c-d532d6d73ae3",
 			"position": {
-				"x": 458.13790274809196,
-				"y": 82.10722731128135
+				"x": 459.2958565289947,
+				"y": 80.94927353037855
 			},
 			"type": "assignment",
 			"data": {
@@ -290,8 +290,8 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 458.13790274809196,
-					"y": 82.10722731128135
+					"x": 459.2958565289947,
+					"y": 80.94927353037855
 				},
 				"agamaData": {
 					"id": "Agama-assignment-Node-6a0f706a-0acd-480c-896c-d532d6d73ae3",
@@ -311,7 +311,7 @@
 						},
 						{
 							"variableTypeCheck": false,
-							"assignmentExpression": "conf.hello",
+							"assignmentExpression": "config",
 							"assignedVariableName": "oauthParamas"
 						}
 					],
@@ -319,10 +319,10 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
-				"x": 458.13790274809196,
-				"y": 82.10722731128135
+				"x": 459.2958565289947,
+				"y": 80.94927353037855
 			},
 			"dragging": false
 		},
@@ -356,7 +356,7 @@
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"logMessage": "\"[org.gluu.hello.coop]: initiated flow with config\" conf.hello",
+					"logMessage": "\"[org.gluu.hello.coop]: initiated flow with config\" config",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -391,11 +391,11 @@
 					"comment": "",
 					"isTopLevelFlow": true,
 					"basepath": "",
-					"configParams": "{\n  \"org.gluu.hello.coop\": {\n    \"hello\": {\n      \"authzEndpoint\": \"https://wallet.hello.coop/authorize\",\n      \"tokenEndpoint\": \"https://wallet.hello.coop/oauth/token\",\n      \"userInfoEndpoint\": \"https://wallet.hello.coop/oauth/userinfo\",\n      \"clientId\": \"CLIENT_INDENTIFIER\",\n      \"clientSecret\": \"CLIENT_SECRET\",\n      \"scopes\": [\n        \"openid\"\n      ],\n      \"clientCredsInRequestBody\": true,\n      \"custParamsAuthReq\": {},\n      \"custParamsTokenReq\": {},\n      \"redirectUri\": null\n    },\n    \"uidPrefix\": \"hello-\"\n  }\n}",
+					"configParams": "{\n  \"hello\": {\n    \"authzEndpoint\": \"https://wallet.hello.coop/authorize\",\n    \"tokenEndpoint\": \"https://wallet.hello.coop/oauth/token\",\n    \"userInfoEndpoint\": \"https://wallet.hello.coop/oauth/userinfo\",\n    \"clientId\": \"CLIENT_INDENTIFIER\",\n    \"clientSecret\": \"CLIENT_SECRET\",\n    \"scopes\": [\n      \"openid\"\n    ],\n    \"clientCredsInRequestBody\": true,\n    \"custParamsAuthReq\": {},\n    \"custParamsTokenReq\": {},\n    \"redirectUri\": null\n  },\n  \"uidPrefix\": \"hello-\"\n}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
 					"inputs": "",
-					"configs": "conf",
+					"configs": "config",
 					"flowname": "org.gluu.hello.coop"
 				},
 				"skake": false
@@ -553,8 +553,8 @@
 		}
 	],
 	"viewport": {
-		"x": -94,
-		"y": 88,
-		"zoom": 1
+		"x": 15.002519070064068,
+		"y": 86.55988202923103,
+		"zoom": 0.8635923268201192
 	}
 }
