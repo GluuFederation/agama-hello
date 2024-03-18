@@ -399,7 +399,8 @@
 					"logMessage": "\"configurations parsed successfully\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": true,
 			"positionAbsolute": {
@@ -649,8 +650,8 @@
 		}
 	],
 	"viewport": {
-		"x": 18,
-		"y": 44,
+		"x": 10,
+		"y": 15,
 		"zoom": 1
 	}
 }
