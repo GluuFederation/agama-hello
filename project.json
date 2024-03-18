@@ -14,30 +14,26 @@
         "social-logins",
         "authentication"
     ],
-    "noDirectLaunch": [
-        "hello.agama.inbound.hello",
-        "hello.agama.inbound.hello_user"
-    ],
     "configs": {
-        "hello.agama.inbound.main": {
-            "hello": {
-                "authzEndpoint": "https://wallet.hello.coop/authorize",
-                "tokenEndpoint": "https://wallet.hello.coop/oauth/token",
-                "userInfoEndpoint": "https://wallet.hello.coop/oauth/userinfo",
-                "clientId": "CLIENT_INDENTIFIER",
-                "clientSecret": "CLIENT_SECRET",
-                "scopes": [
-                    "openid"
-                ],
-                "clientCredsInRequestBody": true,
-                "custParamsAuthReq": {},
-                "custParamsTokenReq": {},
-                "redirectUri": null
-            },
-            "uidPrefix": "hello-"
-        },
-        "hello.agama.inbound.hello": {},
-        "hello.agama.inbound.hello_user": {}
+        "org.gluu.hello.coop": {
+            "org.gluu.hello.coop": {
+                "hello": {
+                    "authzEndpoint": "https://wallet.hello.coop/authorize",
+                    "tokenEndpoint": "https://wallet.hello.coop/oauth/token",
+                    "userInfoEndpoint": "https://wallet.hello.coop/oauth/userinfo",
+                    "clientId": "CLIENT_INDENTIFIER",
+                    "clientSecret": "CLIENT_SECRET",
+                    "scopes": [
+                        "openid"
+                    ],
+                    "clientCredsInRequestBody": true,
+                    "custParamsAuthReq": {},
+                    "custParamsTokenReq": {},
+                    "redirectUri": null
+                },
+                "uidPrefix": "hello-"
+            }
+        }
     },
     "name": "agama-hello"
 }

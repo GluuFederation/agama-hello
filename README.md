@@ -25,50 +25,26 @@ end-user to the **hello.coop** authorize endpoint: `https://wallet.hello.coop/au
 If successful, the Agama flow calls the Userinfo endpoint to obtain user
 claims.
 
+
 # Deploy and Test
 
 ## Requirements
 
 1. Running instance of Jans Auth Server or Gluu Flex
 
-## Add Java dependencies
-1. Download latest [agama-hello-custom.jar](https://github.com/GluuFederation/agama-hello/releases/latest/download/agama-hello-custom.jar) from [Releases](https://github.com/GluuFederation/agama-hello/releases).
-2. `scp` the jar file to `/opt/jans/jetty/jans-auth/custom/libs/` on Auth Server
-3. On Auth Server,  edit `/opt/jans/jetty/jans-auth/webapps/jans-auth.xml` and
-add the jar file to the `<set name="extractClasspath">...</Set>` element. For example:
-```
-   <Configure class="org.eclipse.jetty.webapp.WebAppContext">
-      <Set name="contextPath">/jans-auth</Set>
-      <Set name="war">
-          <Property name="jetty.webapps" default="." />/jans-auth.war
-      </Set>
-      <Set name="extractWAR">true</Set>
-      <Set name="extraClasspath">
-         ...
-         /opt/jans/jetty/jans-auth/custom/libs/agama-hello-custom-{version}.jar,
-         ...
-      </Set>
-    </Configure>
-```
-
-4. Restart Auth Server to load the new jar:
-```
-systemctl restart jans-auth.service
-````
-
 ## Deployment
 
-Download the latest [agama-hello.gama](https://github.com/GluuFederation/agama-hello/releases/latest/download/agama-hello.gama) file and deploy it in Auth Sever. You can follow this [guideline](https://agama-lab.gluu.org/agama-101/deploying-an-agama-project-to-jans-server/) if you don't know how to deploy an Agama Project.
+Download the latest [agama-hello.gama](https://github.com/GluuFederation/agama-hello/releases/latest/download/agama-hello.gama) file and deploy it on Auth Server. You can follow this [guideline](https://gluu.org/quick-start-guide/) if you don't know how to deploy an Agama Project. Also, You can fork this project and open it in [Agama Lab](https://cloud.gluu.org/agama-lab) for better customizations.
 
 ## Configuration
 
 After deploying the `agama-hello` project, extract the sample configuration:
 1. Move to the top of the agama-project using `jans-tui` then press `c` It will popup with the below options:
     ![Screenshot 2023-11-08 at 11 32 48 AM](https://github.com/GluuFederation/agama-hello/assets/20867846/8ccc6bd2-6dc2-4c79-920a-db5cc687c8b5)
-1. Select `export sample config` to extract sample configuration into a file.
+1. Select `export sample config` to extract the sample configuration into a file.
     ![Screenshot 2023-11-08 at 11 29 48 AM](https://github.com/GluuFederation/agama-hello/assets/20867846/53178b8d-5d5d-45b6-9017-fa7bc4f54fe0)
 1. Modify the configuration file with your **hello.coop** client credentials,
-which you can find in the [console page](https://console.hello.coop) :
+which you can find on the [console page](https://console.hello.coop) :
 ```
     {
       "hello.agama.inbound.hello": {},
@@ -92,8 +68,8 @@ which you can find in the [console page](https://console.hello.coop) :
       }
     }
 ```
-1. Import the modified configuration file using **`Import Configuration`** option.
-It will show successful result like below picture:
+1. Import the modified configuration file using the **`Import Configuration`** option.
+It will show successful results like the below picture:
     ![import success](https://github.com/GluuFederation/agama-hello/assets/20867846/141cb8b8-4e8f-46f9-ada6-1d2228956197)
 
 Setup is done! Now, let's test our deployment!
@@ -126,7 +102,7 @@ This project is licensed under the [Apache 2.0](https://github.com/GluuFederatio
 
 # Acknowledgments
 
-This project based on [agama-openid](https://github.com/GluuFederation/agama-openid).
+This project is based on [agama-openid](https://github.com/GluuFederation/agama-openid).
 
 <!-- This are stats url reference for this repository -->
 [contributors-shield]: https://img.shields.io/github/contributors/GluuFederation/agama-hello.svg?style=for-the-badge
