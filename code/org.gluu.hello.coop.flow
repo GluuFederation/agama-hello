@@ -1,16 +1,17 @@
 Flow org.gluu.hello.coop
      Basepath ""
      Configs config
-Log "@debug [org.gluu.hello.coop]: initiated flow with config " config
+Log "@info hello-agama: flow initiated successfully"
+Log "@debug [hello-agama]: configurations as follows " config
 checkDependency = true
-oauthParams = config.hello.oauth
+oauthParams = config.hello
 Log "@debug oauth configurations parsed successfully " oauthParams
 When checkDependency is true
      data = Trigger org.gluu.inbound.oauth2.AuthzCodeWithUserInfo oauthParams
      Log "@debug data received from openid oauth flow: " data
      uid = Call io.jans.inbound.UserOnboardHelper#exec uidPrefix data.data.profile
-it_ceawf = {success:true, data: { userId: uid }}
-Finish it_ceawf
+it_delya = {success:true, data: { userId: uid }}
+Finish it_delya
 Log "@error openid agama flow is missing. please install agama-openid first"
-it_yfalc = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
-Finish it_yfalc
+it_pkrcq = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
+Finish it_pkrcq
