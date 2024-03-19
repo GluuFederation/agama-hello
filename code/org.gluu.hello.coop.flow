@@ -3,14 +3,14 @@ Flow org.gluu.hello.coop
      Configs config
 Log "@debug [org.gluu.hello.coop]: initiated flow with config " config
 checkDependency = true
-oauthParams = config.hello
-Log "@debug configurations parsed successfully " oauthParams
+oauthParams = config.hello.oauth
+Log "@debug oauth configurations parsed successfully " oauthParams
 When checkDependency is true
      data = Trigger org.gluu.inbound.oauth2.AuthzCodeWithUserInfo oauthParams
      Log "@debug data received from openid oauth flow: " data
      uid = Call io.jans.inbound.UserOnboardHelper#exec uidPrefix data.data.profile
-it_hagsx = {success:true, data: { userId: uid }}
-Finish it_hagsx
+it_ceawf = {success:true, data: { userId: uid }}
+Finish it_ceawf
 Log "@error openid agama flow is missing. please install agama-openid first"
-it_dznmj = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
-Finish it_dznmj
+it_yfalc = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
+Finish it_yfalc
