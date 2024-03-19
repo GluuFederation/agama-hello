@@ -30,9 +30,9 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "{ userId: uid, token: token}",
+					"returnVariable": "uid",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
-					"finishMode": "withSuccess"
+					"finishMode": "withVariable"
 				},
 				"skake": false
 			},
@@ -298,7 +298,7 @@
 					"comment": "",
 					"isTopLevelFlow": true,
 					"basepath": "",
-					"configParams": "{\n  \"hello\": {\n    \"oauth\": {\n      \"authzEndpoint\": \"https://wallet.hello.coop/authorize\",\n      \"tokenEndpoint\": \"https://wallet.hello.coop/oauth/token\",\n      \"userInfoEndpoint\": \"https://wallet.hello.coop/oauth/userinfo\",\n      \"clientId\": \"CLIENT_INDENTIFIER\",\n      \"clientSecret\": \"CLIENT_SECRET\",\n      \"scopes\": [\n        \"openid\"\n      ],\n      \"clientCredsInRequestBody\": true,\n      \"custParamsAuthReq\": {},\n      \"custParamsTokenReq\": {},\n      \"redirectUri\": \"\"\n    },\n    \"uidPrefix\": \"hello-\"\n  }\n}",
+					"configParams": "{\n  \"hello\": {\n    \"oauth\": {\n      \"authzEndpoint\": \"https://wallet.hello.coop/authorize\",\n      \"tokenEndpoint\": \"https://wallet.hello.coop/oauth/token\",\n      \"userInfoEndpoint\": \"https://wallet.hello.coop/oauth/userinfo\",\n      \"clientId\": \"CLIENT_INDENTIFIER\",\n      \"clientSecret\": \"CLIENT_SECRET\",\n      \"scopes\": [\n        \"openid\"\n      ],\n      \"clientCredsInRequestBody\": true,\n      \"custParamsAuthReq\": {},\n      \"custParamsTokenReq\": {}\n    },\n    \"uidPrefix\": \"hello-\"\n  }\n}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
 					"inputs": "",
@@ -311,7 +311,7 @@
 				"x": -11.29501182357933,
 				"y": 86.27580549618392
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": -11.29501182357933,
@@ -567,7 +567,7 @@
 				],
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 1064.1700474896277,
 				"y": 92.96886262046701
@@ -880,8 +880,8 @@
 		}
 	],
 	"viewport": {
-		"x": -336.18307833091626,
-		"y": 114.17348031570128,
-		"zoom": 0.5955096253129096
+		"x": 61.985957386346115,
+		"y": 110.9250873169899,
+		"zoom": 0.542531113142117
 	}
 }
