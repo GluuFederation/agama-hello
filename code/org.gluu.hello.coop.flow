@@ -1,17 +1,18 @@
 Flow org.gluu.hello.coop
      Basepath ""
-     Configs config
+     Configs conf
 Log "@info hello-agama: flow initiated successfully"
-Log "@debug [hello-agama]: configurations as follows " config
-checkDependency = true
-oauthParams = config.hello
+oauthParams = conf.hello.oauth
+uidPrefix = conf.hello.uidPrefix
 Log "@debug oauth configurations parsed successfully " oauthParams
-When checkDependency is true
-     data = Trigger org.gluu.inbound.oauth2.AuthzCodeWithUserInfo oauthParams
-     Log "@debug data received from openid oauth flow: " data
-     uid = Call io.jans.inbound.UserOnboardHelper#exec uidPrefix data.data.profile
-it_kklqm = {success:true, data: { userId: uid }}
-Finish it_kklqm
+authResult | e = Trigger org.gluu.inbound.oauth2.AuthzCodeWithUserInfo oauthParams
+When authResult is not null and authResult.success is true
+     profile = authResult.data.profile
+     token = authResult.data.tokenResponse
+     uid = Call io.jans.inbound.UserOnboardHelper#exec uidPrefix profile
+     Log "@info [agama-hello] user login successfully with " uid 
+     it_gntgv = undefined
+     Finish it_gntgv
 Log "@error openid agama flow is missing. please install agama-openid first"
-it_qttol = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
-Finish it_qttol
+it_qkbtf = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
+Finish it_qkbtf
