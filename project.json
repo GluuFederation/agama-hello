@@ -16,8 +16,8 @@
     ],
     "configs": {
         "org.gluu.hello.coop": {
-            "org.gluu.hello.coop": {
-                "hello": {
+            "hello": {
+                "oauth": {
                     "authzEndpoint": "https://wallet.hello.coop/authorize",
                     "tokenEndpoint": "https://wallet.hello.coop/oauth/token",
                     "userInfoEndpoint": "https://wallet.hello.coop/oauth/userinfo",
@@ -28,8 +28,7 @@
                     ],
                     "clientCredsInRequestBody": true,
                     "custParamsAuthReq": {},
-                    "custParamsTokenReq": {},
-                    "redirectUri": null
+                    "custParamsTokenReq": {}
                 },
                 "uidPrefix": "hello-"
             }
