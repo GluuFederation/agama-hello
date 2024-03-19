@@ -509,7 +509,8 @@
 					"logMessage": "\"hello-agama: flow initiated successfully\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -785,8 +786,8 @@
 		}
 	],
 	"viewport": {
-		"x": 207,
-		"y": 41,
+		"x": 20,
+		"y": 49,
 		"zoom": 1
 	}
 }
