@@ -11,8 +11,7 @@ When authResult is not null and authResult.success is true
      token = authResult.data.tokenResponse
      uid = Call io.jans.inbound.UserOnboardHelper#exec uidPrefix profile
      Log "@info [agama-hello] user login successfully with " uid 
-     it_gntgv = undefined
-     Finish it_gntgv
-Log "@error openid agama flow is missing. please install agama-openid first"
-it_qkbtf = {success:false, error: "agama-openid flow is missing. please install agama-openid first."}
-Finish it_qkbtf
+     it_zgdzr = {success:true, data: { userId: uid, token: token}}
+     Finish it_zgdzr
+Log "@error [agama-hello] " e
+Finish e
