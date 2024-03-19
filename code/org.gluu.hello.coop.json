@@ -30,9 +30,11 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "{ userId: uid, token: token }",
-					"nodeIcon": "material-symbols:line-end-square-rounded"
-				}
+					"returnVariable": "{ userId: uid, token: token}",
+					"nodeIcon": "material-symbols:line-end-square-rounded",
+					"finishMode": "withSuccess"
+				},
+				"skake": false
 			},
 			"positionAbsolute": {
 				"x": 1777.1700474896277,
@@ -74,7 +76,8 @@
 					"logMessage": "\"[agama-hello] user login successfully with \" uid ",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -124,9 +127,10 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "uid"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1377.1700474896277,
@@ -176,7 +180,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -190,8 +195,8 @@
 			"height": 123,
 			"id": "finish-d6c6d984-a818-4bcc-8ca7-9f787841e074",
 			"position": {
-				"x": 1611.1233878166665,
-				"y": 20.769614898407667
+				"x": 1607.764919850764,
+				"y": 39.24118871087137
 			},
 			"type": "finish",
 			"data": {
@@ -203,8 +208,8 @@
 				"inIterateBlock": false,
 				"handles": [],
 				"position": {
-					"x": 1611.1233878166665,
-					"y": 20.769614898407667
+					"x": 1607.764919850764,
+					"y": 39.24118871087137
 				},
 				"agamaData": {
 					"id": "finish-d6c6d984-a818-4bcc-8ca7-9f787841e074",
@@ -215,16 +220,16 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "agama-openid flow is missing. please install agama-openid first.",
-					"finishMode": "withFailure",
+					"returnVariable": "e",
+					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				},
 				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 1611.1233878166665,
-				"y": 20.769614898407667
+				"x": 1607.764919850764,
+				"y": 39.24118871087137
 			},
 			"dragging": false
 		},
@@ -258,7 +263,7 @@
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"logMessage": "\"openid agama flow is missing. please install agama-openid first\"",
+					"logMessage": "\"[agama-hello] \" e",
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -293,7 +298,7 @@
 					"comment": "",
 					"isTopLevelFlow": true,
 					"basepath": "",
-					"configParams": "{\n  \"hello\": {\n    \"oauth\": {\n      \"authzEndpoint\": \"https://wallet.hello.coop/authorize\",\n      \"tokenEndpoint\": \"https://wallet.hello.coop/oauth/token\",\n      \"userInfoEndpoint\": \"https://wallet.hello.coop/oauth/userinfo\",\n      \"clientId\": \"CLIENT_INDENTIFIER\",\n      \"clientSecret\": \"CLIENT_SECRET\",\n      \"scopes\": [\n        \"openid\"\n      ],\n      \"clientCredsInRequestBody\": true,\n      \"custParamsAuthReq\": {},\n      \"custParamsTokenReq\": {},\n      \"redirectUri\": null\n    },\n    \"uidPrefix\": \"hello-\"\n  }\n}",
+					"configParams": "{\n  \"hello\": {\n    \"oauth\": {\n      \"authzEndpoint\": \"https://wallet.hello.coop/authorize\",\n      \"tokenEndpoint\": \"https://wallet.hello.coop/oauth/token\",\n      \"userInfoEndpoint\": \"https://wallet.hello.coop/oauth/userinfo\",\n      \"clientId\": \"CLIENT_INDENTIFIER\",\n      \"clientSecret\": \"CLIENT_SECRET\",\n      \"scopes\": [\n        \"openid\"\n      ],\n      \"clientCredsInRequestBody\": true,\n      \"custParamsAuthReq\": {},\n      \"custParamsTokenReq\": {},\n      \"redirectUri\": \"\"\n    },\n    \"uidPrefix\": \"hello-\"\n  }\n}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
 					"inputs": "",
@@ -497,7 +502,8 @@
 					],
 					"asssignedVariableName": "authResult",
 					"exceptionVariableField": "e"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -561,7 +567,7 @@
 				],
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 1064.1700474896277,
 				"y": 92.96886262046701
@@ -874,8 +880,8 @@
 		}
 	],
 	"viewport": {
-		"x": -540.5469799508827,
-		"y": 121.52204904364373,
-		"zoom": 0.743612332632518
+		"x": -336.18307833091626,
+		"y": 114.17348031570128,
+		"zoom": 0.5955096253129096
 	}
 }
