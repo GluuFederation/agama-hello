@@ -1,3 +1,4 @@
+// Agama Project to support Social Login from the Hello SaaS service
 Flow org.gluu.hello.coop
      Basepath ""
      Configs conf
