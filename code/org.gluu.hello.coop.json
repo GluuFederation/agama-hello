@@ -130,7 +130,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1377.1700474896277,
@@ -295,7 +295,7 @@
 					"type": "Agama-start-Flow",
 					"displayName": "hello.coop social login",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Agama Project to support Social Login from the Hello SaaS service",
 					"isTopLevelFlow": true,
 					"basepath": "",
 					"configParams": "{\n  \"hello\": {\n    \"oauth\": {\n      \"authzEndpoint\": \"https://wallet.hello.coop/authorize\",\n      \"tokenEndpoint\": \"https://wallet.hello.coop/oauth/token\",\n      \"userInfoEndpoint\": \"https://wallet.hello.coop/oauth/userinfo\",\n      \"clientId\": \"CLIENT_INDENTIFIER\",\n      \"clientSecret\": \"CLIENT_SECRET\",\n      \"scopes\": [\n        \"openid\"\n      ]\n    },\n    \"uidPrefix\": \"hello-\"\n  }\n}",
@@ -311,7 +311,7 @@
 				"x": -7.29501182357933,
 				"y": 87.27580549618392
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": -7.29501182357933,
@@ -881,8 +881,8 @@
 		}
 	],
 	"viewport": {
-		"x": -720,
-		"y": 31,
-		"zoom": 1
+		"x": 92.10204263647381,
+		"y": 36.74611675694558,
+		"zoom": 0.792024111715557
 	}
 }
