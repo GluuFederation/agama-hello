@@ -2,13 +2,18 @@ Flow org.gluu.hello.coop
      Basepath ""
      Configs conf
 Log "@info hello-agama: flow initiated successfully"
+// Assigned Hello SaaS OAuth  configurations
 oauthParams = conf.hello.oauth
 uidPrefix = conf.hello.uidPrefix
 Log "@debug oauth configurations parsed successfully " oauthParams
+// call agama-openid authentication for Hello SaaS service
 authResult | e = Trigger org.gluu.inbound.oauth2.AuthzCodeWithUserInfo oauthParams
+// check if authentication is successful
 When authResult is not null and authResult.success is true
+     // assigned user data received from agama-openid flow
      profile = authResult.data.profile
      token = authResult.data.tokenResponse
+     // Verify and add user to Jans Server
      uid = Call io.jans.inbound.UserOnboardHelper#exec uidPrefix profile
      Log "@info [agama-hello] user login successfully with " uid 
      Finish uid
