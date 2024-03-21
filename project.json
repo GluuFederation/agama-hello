@@ -25,10 +25,7 @@
                     "clientSecret": "CLIENT_SECRET",
                     "scopes": [
                         "openid"
-                    ],
-                    "clientCredsInRequestBody": true,
-                    "custParamsAuthReq": {},
-                    "custParamsTokenReq": {}
+                    ]
                 },
                 "uidPrefix": "hello-"
             }
