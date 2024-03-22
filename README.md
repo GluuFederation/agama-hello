@@ -13,24 +13,20 @@
 
 This demo project shows how to use Agama to leverage the powerful
 [hello.coop](https://hello.coop) platform for consumer authentication, which
-supports a variety of authenticators and social login options.
+supports a variety of authenticators and social login options. Also, This is an example to show the reusability of agama flows from one project to another.
 
 # Overview
 
-Agama has built-in support for developers to connect to an external OpenID
-Connect Provider ("OP") using the authorization code flow. That's handy because
-**hello.coop** provides an OpenID Connect interface for user authentication.
-Using the Agama `RFAC` command, the main **agama-hello** flow redirects the
-end-user to the **hello.coop** authorize endpoint: `https://wallet.hello.coop/authorize`.
-If successful, the Agama flow calls the Userinfo endpoint to obtain user
-claims.
+A basic diagram to understand how the `agama-hello` works. 
 
+![agama-hello](https://github.com/GluuFederation/agama-hello/assets/20867846/5738b051-3988-4dfd-b5c8-31bab5ef262b)
 
 # Deploy and Test
 
 ## Requirements
 
 1. Running instance of Jans Auth Server or Gluu Flex
+2. [agama-openid](https://github.com/GluuFederation/agama-openid) deployment required 
 
 ## Deployment
 
@@ -38,41 +34,35 @@ Download the latest [agama-hello.gama](https://github.com/GluuFederation/agama-h
 
 ## Configuration
 
-After deploying the `agama-hello` project, extract the sample configuration:
-1. Move to the top of the agama-project using `jans-tui` then press `c` It will popup with the below options:
-    ![Screenshot 2023-11-08 at 11 32 48 AM](https://github.com/GluuFederation/agama-hello/assets/20867846/8ccc6bd2-6dc2-4c79-920a-db5cc687c8b5)
-1. Select `export sample config` to extract the sample configuration into a file.
-    ![Screenshot 2023-11-08 at 11 29 48 AM](https://github.com/GluuFederation/agama-hello/assets/20867846/53178b8d-5d5d-45b6-9017-fa7bc4f54fe0)
-1. Modify the configuration file with your **hello.coop** client credentials,
+Modify the configuration file with your **hello.coop** client credentials,
 which you can find on the [console page](https://console.hello.coop) :
 ```
-    {
-      "hello.agama.inbound.hello": {},
-      "hello.agama.inbound.hello_user": {},
-      "hello.agama.inbound.main": {
-        "hello": {
-          "clientId": "CLIENT_IDENTIFIER",      <--- ADD YOUR CLIENT ID
-          "clientSecret": "CLIENT_SECRET",      <--- ADD YOUR CLIENT SECRET
-          "authzEndpoint": "https://wallet.hello.coop/authorize",
-          "tokenEndpoint": "https://wallet.hello.coop/oauth/token",
-          "userInfoEndpoint": "https://wallet.hello.coop/oauth/userinfo",
-          "scopes": [
-            "openid"
-          ],
-          "clientCredsInRequestBody": true,
-          "custParamsAuthReq": {},
-          "custParamsTokenReq": {},
-          "redirectUri": null
-        },
-        "uidPrefix": ""
-      }
-    }
+{
+  "org.gluu.hello.coop": {
+    "hello": {
+      "clientId": "CLIENT_IDENTIFIER",      <--- ADD YOUR CLIENT ID
+      "clientSecret": "CLIENT_SECRET",      <--- ADD YOUR CLIENT SECRET
+      "authzEndpoint": "https://wallet.hello.coop/authorize",
+      "tokenEndpoint": "https://wallet.hello.coop/oauth/token",
+      "userInfoEndpoint": "https://wallet.hello.coop/oauth/userinfo",
+      "scopes": [
+        "openid"
+      ]
+    },
+    "uidPrefix": ""
+  }
+}
 ```
-1. Import the modified configuration file using the **`Import Configuration`** option.
-It will show successful results like the below picture:
-    ![import success](https://github.com/GluuFederation/agama-hello/assets/20867846/141cb8b8-4e8f-46f9-ada6-1d2228956197)
 
-Setup is done! Now, let's test our deployment!
+### Additional Properties
+
+- `redirectUri` 
+- `clientCredsInRequestBody`
+- `custParamsAuthReq`
+- `custParamsTokenReq`
+
+To know more details on these (`oauthParams`), Kindly check [agama-openid](https://github.com/GluuFederation/agama-openid?tab=readme-ov-file#authzcodewithuserinfo-and-authzcode)
+
 
 ## Test Deployment
 
