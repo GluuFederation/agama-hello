@@ -19,7 +19,8 @@ supports a variety of authenticators and social login options. Also, This is an 
 
 A basic diagram to understand how the `agama-hello` works. 
 
-![Agama-Hello](https://github-production-user-asset-6210df.s3.amazonaws.com/20867846/315200464-fd1e3d15-7d3d-4977-b11a-9e9bb20e5eb6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240321%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240321T075653Z&X-Amz-Expires=300&X-Amz-Signature=49fb7f5bbec9b1468c1c387b7df6fbb7c76a6714f33056dd2597b4503fab56d6&X-Amz-SignedHeaders=host&actor_id=20867846&key_id=0&repo_id=706335441)
+![Uploading agama-hello.png…]()
+
 
 # Deploy and Test
 
