@@ -19,7 +19,8 @@ supports a variety of authenticators and social login options. Also, This is an 
 
 A basic diagram to understand how the `agama-hello` works. 
 
-![Uploading agama-hello.png…]()
+![agama-hello](https://github.com/imShakil/agama-hello/assets/20867846/c9de96e2-eb65-4da3-b2eb-7f505530aca3)
+
 
 
 # Deploy and Test
