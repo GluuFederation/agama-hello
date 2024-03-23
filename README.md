@@ -19,7 +19,9 @@ supports a variety of authenticators and social login options. Also, This is an 
 
 A basic diagram to understand how the `agama-hello` works. 
 
-![agama-hello](https://github.com/GluuFederation/agama-hello/assets/20867846/5738b051-3988-4dfd-b5c8-31bab5ef262b)
+![hello-agama-diagram](https://github.com/GluuFederation/agama-hello/assets/20867846/dd854a29-a507-4718-b366-89e4e07abfdf)
+([Source Image](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIEMHNYFtYFoAWlzgPbQMqQCOArpAHYDGMAIiAgE7IBQslwOD0ACpAwM45yzAA6wGoSiDHlg0AEYMcAd359R4ydNizoyyPP5hIGiSCky5AeW6mtluIhQYsuO+e26EyNDhEUQABN3Cx05TGwcZmZeASFUAD5FFTUGAC5oABkceBBhZNU+RP1DYwzmEqNgSESC1IyGSECQRvZoDmgbZjqihJsM2BJgdHJoRtJIfjlvFAB9ADNcZQBeTngAOnhwEhJ1iNx1yhw-ZhtEmbR9nAy8gDccAGsTC5dI86dff3IgjIAVBhA8HgfDSAB1yGtNttdnl5DgSORAuscINhgAmdYAQSG6AAXgBhHCBSAAdTA6AAqqkAJLkeZRF5+AKBWpKQrpMZNFqQNodK7dNmpRJXAY40bjMhTZhXYWua7QXC5UboWAiL78aVyxL9aCUWDYeRsB6nbjvHyoJnfQIZK66onPD4Wr5BM3OEXQfgkSjUfgal4yhKVMqdbh24nMIA))
+
 
 # Deploy and Test
 
