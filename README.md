@@ -20,6 +20,14 @@ reusability of agama flows from one project to another.
 
 ## Where To Deploy
 
+The project can be deployed to any IAM server that runs an implementation of 
+the [Agama Framework](https://docs.jans.io/head/agama/introduction/) like 
+[Janssen Server](https://jans.io) and [Gluu Flex](https://gluu.org/flex/).
+
+
+
+## How To Deploy
+
 Different IAM servers may provide different methods and 
 user interfaces from where an Agama project can be deployed on that server. 
 The steps below show how the Agama-hello project can be deployed on the 
@@ -32,15 +40,17 @@ Deployment of an Agama project involves three steps
 - [Configure the project](#configure-the-project)
 
 
+#### Requirements
+- Agama Dependency: [agama-openid](https://github.com/GluuFederation/agama-openid) deployment
+- Credentials: [Hellō SaaS](https://hello.coop) client credentials
 
 
 ### Download the Project
 
- [!TIP]
-
- Skip this step if you use the Janssen Server TUI tool to 
- configure this project. The TUI tool enables the download and adding of this 
- project directly from the tool, as part of the `community projects` listing. 
+> [!TIP]
+> Skip this step if you use the Janssen Server TUI tool to 
+> configure this project. The TUI tool enables the download and adding of this 
+> project directly from the tool, as part of the `community projects` listing. 
 
 The project is bundled as 
 [.gama package](https://docs.jans.io/head/agama/gama-format/). 
@@ -54,13 +64,8 @@ the `.gama` package.
 
  The Janssen Server provides multiple ways an Agama project can be 
  deployed and configured. Either use the command-line tool, REST API, or a 
- TUI (text-based UI). Refer to [Agama project configuration page](https://docs.jans.io/head/admin/config-guide/auth-server-config/agama-project-configuration/) in the Janssen Server documentation for more 
- details.
+ TUI (text-based UI). Refer to [Agama project configuration page](https://docs.jans.io/head/admin/config-guide/auth-server-config/agama-project-configuration/) in the Janssen Server documentation for more details.
 
-
-#### Requirements
-- Agama Dependency: [agama-openid](https://github.com/GluuFederation/agama-openid) deployment
-- Credentials: [Hellō SaaS](https://hello.coop) client credentials
 
 
 
@@ -96,7 +101,8 @@ Sample JSON:
 
 ### Test The Flow
 
-Use any Relying party implementation (like [jans-tarp](https://github.com/JanssenProject/jans/tree/main/demos/jans-tarp)) to send authentication request that triggers the flow.
+Use any Relying party implementation (like [jans-tarp](https://github.com/JanssenProject/jans/tree/main/demos/jans-tarp)) 
+to send authentication request that triggers the flow.
 
 From the incoming authentication request, the Janssen Server reads the `ACR` 
 parameter value to identify which authentication method should be used. 
@@ -105,6 +111,21 @@ specify the ACR value as `agama_<qualified-name-of-the-top-level-flow>`,
 i.e  `agama_org.gluu.hello.coop`.
 
 
+## Customize and Make It Your Own
+
+Fork this repo to start customizing the Agama-hello project. It is possible to 
+customize the user interface provided by the flow to suit your organization's 
+branding 
+guidelines. Or customize the overall flow behavior. Follow the best 
+practices and steps listed 
+[here](https://docs.jans.io/head/admin/developer/agama/agama-best-practices/#project-reuse-and-customizations) 
+to achieve these customizations in the best possible way.
+This  project can be re-used in other Agama projects to create more complex
+ authentication journeys. To re-use, trigger the 
+ [org.gluu.hello.coop](#flows-in-the-project) flow from other Agama projects.
+
+To make it easier to visualize and customize the Agama Project, use 
+[Agama Lab](https://cloud.gluu.org/agama-lab/login).
 
 ## Flows In The Project 
 
@@ -140,7 +161,6 @@ hello ->> OP: callback
 OP ->> agama-OpenID: hello code
 agama-OpenID ->> agama-hello: success
 agama-hello ->> Website: OP code
-
 ```
 
 
