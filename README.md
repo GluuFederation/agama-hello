@@ -155,7 +155,7 @@ participant agama-OpenID
 participant hello
 
 Person->>Browser: Login
-Browser->>Website:
+Browser->>Website: Load
 Website->>Browser: redirect to OP
 Browser->>OP: authn request agama_flow=org.gluu.hello.coop
 OP->>agama-hello: invoke
