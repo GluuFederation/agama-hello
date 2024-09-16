@@ -1,5 +1,5 @@
 <p align="center">
-<imgwidth="600"height="400"src="https://github.com/GluuFederation/agama-hello/assets/20867846/5158d850-dc31-4e09-a952-f8d89294dd89">
+<img width="600" height="400" src="https://github.com/GluuFederation/agama-hello/assets/20867846/5158d850-dc31-4e09-a952-f8d89294dd89">
 </p>
 
 <!-- These are statistics for this repository-->
@@ -12,10 +12,10 @@
 # About Agama-Hellō
 
 
-This repo is home to the Gluu Agama-hello project. This Agama project for OpenID
-authentication to leverage the powerful [hello.coop](https://hello.coop)
-platform for consumer authentication, which supports a variety of
-authenticators and social login options.
+This repo is home to the Gluu Agama-hello project. This Agama project provides
+integration with [hello.coop](https://hello.coop)
+platform, which supports a variety of
+authenticators and social sign-in options.
 
 
 ## Where To Deploy
@@ -40,9 +40,14 @@ Deployment of an Agama project involves three steps.
 - [Configure the project](#configure-the-project)
 
 
-#### Requirements
-- Agama Dependency:[agama-openid](https://github.com/GluuFederation/agama-openid) deployment
-- Credentials: You will need client credentials from [Hellō SaaS](https://hello.coop) to authenticate and authorize 
+#### Pre-Requisites
+- Agama-Hello project calls the flows from the 
+[agama-openid](https://github.com/GluuFederation/agama-openid) project. Hence
+a working deployment of agama-openid on the same IAM server is required. For 
+instructions on how to deploy and configure the agama-openid project, please
+visit the [README](https://github.com/GluuFederation/agama-openid)
+- Credentials: You will need client credentials 
+from [Hellō SaaS](https://hello.coop) to authenticate and authorize 
 access to their platform.
 
 
