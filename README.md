@@ -169,14 +169,17 @@ agama-OpenID ->> agama-hello: success
 agama-hello ->> Website: OP code
 ```
 
-
-
-
 # Demo
 
-You'll need an OpenID Connect test RP. You can try [oidcdebugger](https://oidcdebugger.com/),
-[jans-tarp](https://github.com/JanssenProject/jans/tree/main/demos/jans-tarp) or [jans-tent](https://github.com/JanssenProject/jans/tree/main/demos/jans-tent).
-Check out this video to see an example of **agama-hello** in action:
+Check out this video to see the **agama-hello** authentication flow in action.
+Also check the 
+[Agama Project Of The Week](https://gluu.org/agama-project-of-the-week/) video
+series for a quick demo on this flow.
+
+*Note:*
+While video shows how the flow works overall, it may be dated. Do check the 
+[Test The Flow](#test-the-flow) section to understand the current
+method of passing the ACR parameter when invoking the flow.
 
 ![ezgif-1-1574bd2d5c](https://github.com/GluuFederation/agama-hello/assets/20867846/79c70c6c-b4fa-42d2-9ed6-00e5186b4f0d)
 
