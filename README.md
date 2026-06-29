@@ -77,14 +77,11 @@ TUI (text-based UI). Refer to the [Agama project configuration page](https://doc
 
 ### Configure The Project
 
-The Agama project accepts configuration parameters in the JSON format. Every Agama
-project comes with a basic sample configuration file for reference.
+The Agama project accepts configuration parameters in JSON format. Every Agama project comes with a sample configuration file for reference.
 
-Below is a typical configuration of the Agama-hello project. As shown, it contains
-configuration parameters for the [flows contained in it](#flows-in-the-project):
+Below is a typical configuration for the Agama-Hello project:
 
-Sample JSON:
-```
+```json
 {
   "org.gluu.hello.coop": {
     "hello": {
@@ -92,7 +89,7 @@ Sample JSON:
         "authzEndpoint": "https://wallet.hello.coop/authorize",
         "tokenEndpoint": "https://wallet.hello.coop/oauth/token",
         "userInfoEndpoint": "https://wallet.hello.coop/oauth/userinfo",
-        "clientId": "CLIENT_INDENTIFIER",
+        "clientId": "CLIENT_IDENTIFIER",
         "clientSecret": "CLIENT_SECRET",
         "scopes": [
           "openid"
@@ -103,6 +100,21 @@ Sample JSON:
   }
 }
 ```
+
+| Parameter          | Required | Description                                                                                                                                                   | Example                                    |
+| ------------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| `authzEndpoint`    | Yes      | OAuth 2.0 authorization endpoint of the Hello wallet. Used to initiate the authorization flow.                                                                | `https://wallet.hello.coop/authorize`      |
+| `tokenEndpoint`    | Yes      | OAuth 2.0 token endpoint used to exchange the authorization code for tokens.                                                                                  | `https://wallet.hello.coop/oauth/token`    |
+| `userInfoEndpoint` | Yes      | OpenID Connect UserInfo endpoint used to retrieve the authenticated user's profile information.                                                               | `https://wallet.hello.coop/oauth/userinfo` |
+| `clientId`         | Yes      | OAuth client identifier registered with the Hello wallet.                                                                                                     | `CLIENT_IDENTIFIER`                        |
+| `clientSecret`     | Yes      | OAuth client secret associated with the configured client ID.                                                                                                 | `CLIENT_SECRET`                            |
+| `scopes`           | Yes      | List of OAuth/OpenID Connect scopes requested during authentication. At minimum, `openid` is required.                                                        | `["openid"]`                               |
+| `uidPrefix`        | No       | Prefix added to the user identifier when creating or identifying users from the Hello wallet. This helps distinguish Hello users from other identity sources. | `hello-`                                   |
+
+> **Note**
+>
+> The OAuth endpoints must correspond to the same Hello wallet environment (for example, development, staging, or production). Keep the `clientSecret` secure and do not commit it to source control.
+
 
 
 ### Test The Flow
